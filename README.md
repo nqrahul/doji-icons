@@ -27,9 +27,11 @@ const nextConfig = {
 ## Usage
 
 ```tsx
-import { TierIcon, MonIcon, RyoIcon } from "@doji/icons";
+import { TierIcon, TierBadge, MonIcon, RyoIcon } from "@doji/icons";
 
 <TierIcon tier={3} size="md" showTooltip danTotal={120} />
+<TierIcon tier={3} size="lg" badge showTooltip />
+<TierBadge tier={7} size={56} radius={12} />
 <MonIcon size="sm" />
 <RyoIcon size="lg" title="Ryō balance" />
 ```
@@ -43,6 +45,10 @@ import { TierIcon, MonIcon, RyoIcon } from "@doji/icons";
 | `lg` | 56 |
 
 Tier icons use `viewBox="0 0 56 56"`; the wrapper scales width/height.
+
+**Tier badges** (`TierBadge` or `TierIcon` with `badge`) render the blade on a tier-colored plate so transparent strokes stay readable on any background. Badge sizes default slightly larger than bare tier icons at `sm` (24px plate vs 16px icon).
+
+Export `TIER_BACKGROUNDS` / `getTierBackground` if you need the palette outside React.
 
 ## Publishing
 
