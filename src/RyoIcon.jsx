@@ -1,5 +1,7 @@
 "use client";
 
+import { cn } from "./cn.js";
+
 const SIZE_PX = { sm: 16, md: 32, lg: 56 };
 
 export function RyoIconGraphic() {
@@ -45,7 +47,10 @@ export default function RyoIcon({ size = "md", className = "", title }) {
 
   return (
     <span
-      className={`relative inline-flex shrink-0 items-center justify-center ${className}`}
+      className={cn(
+        "relative inline-flex shrink-0 items-center justify-center",
+        className,
+      )}
       style={{ width: px, height: px }}
       title={title}
     >
