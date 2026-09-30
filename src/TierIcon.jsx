@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "./cn.js";
-import TierBadge from "./TierBadge.jsx";
+import TierBadge from "./TierBadge.js";
 import { TIER_ICONS } from "./tierIcons.js";
 import { getTierTooltip } from "./tierMeta.js";
 

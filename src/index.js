@@ -1,5 +1,5 @@
-export { default as TierIcon } from "./TierIcon.jsx";
-export { default as TierBadge } from "./TierBadge.jsx";
+export { default as TierIcon } from "./TierIcon.js";
+export { default as TierBadge } from "./TierBadge.js";
 export {
   ShoshinIcon,
   MinaraiIcon,
@@ -8,10 +8,10 @@ export {
   SenseiIcon,
   HanshiIcon,
   KenseiIcon,
-} from "./TierIcon.jsx";
+} from "./TierIcon.js";
 
-export { default as MonIcon, MonIconGraphic } from "./MonIcon.jsx";
-export { default as RyoIcon, RyoIconGraphic } from "./RyoIcon.jsx";
+export { default as MonIcon, MonIconGraphic } from "./MonIcon.js";
+export { default as RyoIcon, RyoIconGraphic } from "./RyoIcon.js";
 
 export {
   TIER_BACKGROUNDS,
