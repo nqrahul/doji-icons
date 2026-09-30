@@ -36,6 +36,8 @@ import { TierIcon, TierBadge, MonIcon, RyoIcon } from "@doji/icons";
 <RyoIcon size="lg" title="Ryō balance" />
 ```
 
+`className` is merged with tailwind-merge, so a caller's utilities (including display, e.g. `hidden sm:inline-flex`) override the component's defaults.
+
 ### Sizes
 
 | Prop | Pixels |

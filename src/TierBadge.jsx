@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "./cn.js";
 import { TIER_ICONS } from "./tierIcons.js";
 import { getTierBackground, getTierTooltip } from "./tierMeta.js";
 
@@ -46,7 +47,7 @@ export default function TierBadge({
 
   return (
     <span
-      className={`inline-flex shrink-0 items-center justify-center ${className}`}
+      className={cn("inline-flex shrink-0 items-center justify-center", className)}
       style={{
         width: px,
         height: px,
