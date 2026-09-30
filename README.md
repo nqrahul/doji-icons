@@ -7,7 +7,7 @@ Shared React icons for the Doji ecosystem: mastery blade ranks (tiers 1–7), **
 **From GitHub** (after this repo is pushed):
 
 ```bash
-npm install github:gredenko/doji-icons#main
+npm install github:nqrahul/doji-icons#v0.3.0
 ```
 
 **Local development** (sibling folder):
@@ -16,7 +16,9 @@ npm install github:gredenko/doji-icons#main
 "@doji/icons": "file:../doji-icons"
 ```
 
-Then in `next.config.ts`:
+The package ships compiled ESM in `dist/`, so `transpilePackages` is no longer required.
+
+Optional, in `next.config.ts`:
 
 ```ts
 const nextConfig = {
@@ -52,6 +54,12 @@ Tier icons use `viewBox="0 0 56 56"`; the wrapper scales width/height.
 
 Export `TIER_BACKGROUNDS` / `getTierBackground` if you need the palette outside React.
 
-## Publishing
+## Releasing
 
-This package is private ecosystem code. Bump `version` in `package.json` when blade or coin art changes so apps can pin versions.
+1. Edit `src/`.
+2. `npm run build`.
+3. `npm run verify`.
+4. Bump `version`.
+5. Commit `src/` and `dist/` together.
+6. Tag `vX.Y.Z`.
+7. Bump the ref in DojiDojo.
